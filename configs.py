@@ -7,6 +7,6 @@ class Config:
     FSUB = getenv("FSUB", "")
     CHID = int(getenv("CHID", "-100"))
     SUDO = list(map(int, getenv("SUDO").split()))
-    MONGO_URI = getenv("MONGO_URI", "mongodb+srv://autochannelfilter:autochannelfilter@cluster0.mcpsuva.mongodb.net/?retryWrites=true&w=majority")
+    MONGO_URI = getenv("MONGO_URI", "mongodb+srv://autoaprove:pass@cluster0.qhnttc4.mongodb.net/?retryWrites=true&w=majority")
     
 cfg = Config()
