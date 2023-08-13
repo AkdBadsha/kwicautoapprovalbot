@@ -14,17 +14,17 @@ app = Client(
 )
 
 gif = [
-    'https://te.legra.ph/file/a1b3d4a7b5fce249902f7.mp4',
-    'https://te.legra.ph/file/0c855143a4039108df602.mp4',
-    'https://te.legra.ph/file/d7f3f18a92e6f7add8fcd.mp4',
-    'https://te.legra.ph/file/9e334112ee3a4000c4164.mp4',
-    'https://te.legra.ph/file/652fc39ae6295272699c6.mp4',
-    'https://te.legra.ph/file/702ca8761c3fd9c1b91e8.mp4',
-    'https://te.legra.ph/file/a1b3d4a7b5fce249902f7.mp4',
-    'https://te.legra.ph/file/d7f3f18a92e6f7add8fcd.mp4',
-    'https://te.legra.ph/file/0c855143a4039108df602.mp4',
-    'https://te.legra.ph/file/9e334112ee3a4000c4164.mp4',
-    'https://te.legra.ph/file/702ca8761c3fd9c1b91e8.mp4'
+    'https://telegra.ph/file/abb645b9ea9065b82e000.mp4',
+    'https://telegra.ph/file/68b74cc3c70878c085e4d.mp4',
+    'https://telegra.ph/file/ab4b8c2d020ad8c2e79a6.mp4',
+    'https://telegra.ph/file/b666fe80448da9d45f80e.mp4',
+    'https://telegra.ph/file/d21a766130554784b0195.mp4',
+    'https://telegra.ph/file/8b958e52cfb0b7f8977c2.mp4',
+    'https://telegra.ph/file/a6e093b341aec9c75d538.mp4',
+    'https://telegra.ph/file/8ef296eddba00f3efb1be.mp4',
+    'https://telegra.ph/file/1476ac66932c8530f6c20.mp4',
+    'https://telegra.ph/file/a1d8628a347ab6bc04f92.mp4',
+    'https://telegra.ph/file/6cb20350197d178354e85.mp4'
 ]
 
 
@@ -38,7 +38,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @kwicbotupdates__**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hᴇʟʟᴏ {}!\nWᴇʟᴄᴏᴍᴇ Tᴏ {}\n\n__Pᴏᴡᴇʀᴅ Bʏ  : @Auto_Aprove_Robot__**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -55,15 +55,15 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/MoviesNowOTT2"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/kwicbotupdates")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Badsha_Studios"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/Kingbadsha3233")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/kwicapprovalbot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Aprove_Robot?startgroup")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://te.legra.ph/file/8dfe7256883cbc0190478.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @kwicbotupdates__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/ad48c58f9c996543f8841.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @Auto_Aprove_Robot__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
@@ -97,10 +97,10 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/MoviesNowOTT2"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/kwicbotupdates")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Badsha_Studios"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/Kingbadsha3233")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/kwicapprovalbot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Aprove_Robot?startgroup")
                     ]
                 ]
             )
