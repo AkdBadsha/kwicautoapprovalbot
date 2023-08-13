@@ -78,11 +78,11 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🍀 Check Again 🍀", "chk")
+                    InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Aprove_Robot?startgroup")
                 ]
             ]
         )
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**𝐇𝐞𝐥𝐥𝐨 {}! \n\n𝐈 𝐜𝐚𝐧 𝐚𝐩𝐩𝐫𝐨𝐯𝐞 𝐮𝐬𝐞𝐫𝐬 𝐢𝐧 𝐆𝐫𝐨𝐮𝐩𝐬/𝐂𝐡𝐚𝐧𝐧𝐞𝐥𝐬.𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐜𝐡𝐚𝐭 𝐚𝐧𝐝 𝐩𝐫𝐨𝐦𝐨𝐭𝐞 𝐦𝐞 𝐭𝐨 𝐚𝐝𝐦𝐢𝐧 𝐰𝐢𝐭𝐡 𝐚𝐝𝐝 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐩𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧.**".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
