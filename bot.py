@@ -55,9 +55,6 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Badsha_Studios"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/Kingbadsha3233")
-                    ],[
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Aprove_Robot?startgroup")
                     ]
                 ]
@@ -97,9 +94,6 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Badsha_Studios"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/Kingbadsha3233")
-                    ],[
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Aprove_Robot?startgroup")
                     ]
                 ]
